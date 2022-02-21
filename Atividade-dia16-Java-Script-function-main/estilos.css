@@ -1,0 +1,16 @@
+body{
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu{
+    text-align: center;
+    margin-top: 25%;
+    display: flex;
+    background-color: cadetblue;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 20%;
+}
