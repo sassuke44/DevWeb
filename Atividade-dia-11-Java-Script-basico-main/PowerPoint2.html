@@ -1,0 +1,31 @@
+<html>
+    <head>
+    <title>JavaScript Exercício 2</title>
+	<meta charset="utf-8">
+        <script>
+          var nome = prompt("Informe seu nome: ");
+          var nota1 = parseFloat(prompt("Informe a nota da primeira materia: "));
+          var nota2 = parseFloat(prompt("Informe a nota da segunda materia: "));
+          var nota3 = parseFloat(prompt("Informe a nota da terceira materia: "));
+            media = (nota1 + nota2+ nota3)/3;
+            if(media >= 60){
+                mensagem= nome + " foi Aprovado!!" + "Media =" +media;
+            }
+            else if (media <=40 && media < 60){
+                mensagem= nome + " ficou de Recuperação!!" + "Media =" +media;
+            }
+            else{
+                mensagem= nome + " foi Reprovado!!" + "Media =" +media;
+            }
+        alert(mensagem); 
+        </script>
+    </head>
+    <body style="background-color: thistle; text-align: justify; display: inline;">
+        <div style="border: black 2px solid; margin: 12px;padding: auto;">
+            <h1 style="text-align: center;">Exercicio 02</h1>
+	        <h2>2- Calcule a média de 3 notas, caso a nota seja abaixo de 40 informar que o aluno está reprovado, caso esteja acima de 40 e abaixo de 60 informar recuperação, caso seja acima de 60 aprovado.
+            </h2><br>
+	        <h2>R: <script> document.write(mensagem);</script></h2>
+        </div>
+    </body> 
+</html>

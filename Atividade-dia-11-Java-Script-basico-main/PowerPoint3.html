@@ -1,0 +1,37 @@
+<html>
+    <head>
+    <title>JavaScript Exercício 2</title>
+	<meta charset="utf-8">
+        <script>
+          var semaforo = prompt("Informe status do semaforo(verde,amarelo ou vermelho): ");
+          switch(semaforo)
+          {
+              case 'verde':
+              mensagem = "Pode Atravessar";
+            break;
+            case 'amarelo':
+            mensagem = "Atenção";
+            break;
+            case 'vermelho':
+            mensagem = "Não Atravessar";
+            break;
+            default:
+            mensagem ="Status do Semaforo Invalido"
+            break;
+                      }
+          alert(mensagem); 
+        </script>
+    </head>
+    <body style="background-color: thistle; text-align: justify; display: inline;">
+        <div style="border: black 2px solid; margin: 12px;padding: auto;">
+            <h1 style="text-align: center;">Exercicio 02</h1>
+	        <h2>3- Validar os semáforos para usuários com deficiência visual, informando para cada status recebido uma mensagem.
+                Verde, pode atravessar
+                Amarelo, atenção
+                Vermelho, não pode atravessar.
+
+            </h2><br>
+	        <h2>R: <script> document.write(mensagem);</script></h2>
+        </div>
+    </body> 
+</html>

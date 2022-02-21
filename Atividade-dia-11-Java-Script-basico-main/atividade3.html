@@ -1,0 +1,29 @@
+<html>
+    <head>
+    <title>JavaScript Exercício 3</title>
+	<meta charset="utf-8">
+        <script>
+        var valor = parseFloat(prompt("Informe o valor da compra: "));
+          let parcelas = parseFloat(prompt("Informe a quantidade de parcelas:(3 ou 5 vezes): "));
+        if(parcelas == 3)
+        {total = (valor*0.1)+valor;
+	valorparcelas= Math.round(total/parcelas);} 
+        else if (parcelas == 5)
+        {total = (valor*0.2)+valor;
+	valorparcelas= Math.round(total/parcelas);} 
+
+         mensagem = "O valor final sera " + total + " dividido em " +parcelas+" parcelas de R$" + valorparcelas;
+        
+        alert(mensagem); 
+
+		
+        </script>
+    </head>
+    <body style="background-color: thistle; text-align: justify; display: inline;">
+        <div style="border: black 2px solid; margin: 12px;padding: auto;">
+            <h1 style="text-align: center;">Exercicio 03</h1>
+	        <h2>3-	A partir do preço à vista de um determinado produto, calcule o preço total a pagar e o valor da prestação mensal, referentes ao pagamento parcelado. Se o pagamento for parcelado em 3 vezes deve ser dado um acréscimo de 10% no total a ser pago. Se o parcelamento for em 5 vezes, o acréscimo será de 20%. Lembrando que são apenas as 2 opções para parcelamento.</h2><br>
+	        <h2>R: <script> document.write(mensagem);</script></h2>
+        </div>
+    </body> 
+</html>

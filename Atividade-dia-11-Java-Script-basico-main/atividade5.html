@@ -1,0 +1,64 @@
+<html>
+    <head>
+    <title>JavaScript Exercício 5</title>
+	<meta charset="utf-8">
+        <script>
+         
+          var valor = prompt("Informe um valor de 1 a 12: ");
+          var mensagem="";
+          if (valor >= 1 && valor <=12) {
+            switch(valor){
+             case '1': 
+             mensagem = "Janeiro.";
+             break;
+             case '2': 
+             mensagem = "Fevereiro.";
+             break;
+             case '3': 
+             mensagem = "março.";
+             break;
+             case '4': 
+             mensagem = "abril.";
+             break;
+             case '5': 
+             mensagem = "maio.";
+             break;
+             case '6': 
+             mensagem = "junho.";
+             break;
+             case '7': 
+             mensagem = "junho.";
+             break;
+             case '8': 
+             mensagem = "agosto.";
+             break;
+             case '9': 
+             mensagem = "setembro.";
+             break;
+             case '10': 
+             mensagem = "outubro.";
+             break;
+             case '11': 
+             mensagem = "novembro.";
+             break;
+             case '12': 
+             mensagem = "dezembro.";
+             break;
+              default:
+              mensagem = "Digite um valor valido";
+              break;
+        } }else {
+            mensagem = "Digite um valor valido";
+         }
+          
+        alert(mensagem); 
+        </script>
+    </head>
+    <body style="background-color: thistle; text-align: justify; display: inline;">
+        <div style="border: black 2px solid; margin: 12px;padding: auto;">
+            <h1 style="text-align: center;">Exercicio 05</h1>
+	        <h2>5-	Faça um script que receba um número de 1 a 12 e retorne com o nome do respectivo mês referente ao número. Ex - Entrou com número 1 saída: Janeiro e assim sucessivamente.</h2><br>
+	        <h2>R: <script> document.write(mensagem);</script></h2>
+        </div>
+    </body> 
+</html>

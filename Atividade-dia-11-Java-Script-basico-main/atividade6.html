@@ -1,0 +1,54 @@
+<html>
+    <head>
+    <title>JavaScript Exercício 6</title>
+	<meta charset="utf-8">
+        <script>
+         
+          var valor = prompt("Informe a atividade de 1 a 6:(Você esta na 6)");
+         
+          if (valor >= 1 && valor <=12)
+          {
+            switch(valor){
+             case '1': 
+             alert("Você sera redirecionado para a atividade desejada.")
+             window.location.href ="atividade1.html";
+             break;
+             case '2': 
+             alert("Você sera redirecionado para a atividade desejada.")
+             window.location.href ="atividade2.html";
+             break;
+             case '3': 
+             alert("Você sera redirecionado para a atividade desejada.")
+             window.location.href ="atividade3.html";
+             break;
+             case '4': 
+             alert("Você sera redirecionado para a atividade desejada.")
+             window.location.href ="atividade4.html";
+             break;
+             case '5': 
+             alert("Você sera redirecionado para a atividade desejada.")
+             window.location.href ="atividade5.html";
+             break;
+             case '6': 
+             alert("Você sera redirecionado para a atividade desejada.")
+             window.location.href ="atividade6.html";
+             break;
+            default:
+            mensagem = "Digite um valor valido";
+            break;
+        } 
+    }else {
+            mensagem = "Digite um valor valido";
+         }
+          
+        alert(mensagem); 
+        </script>
+    </head>
+    <body style="background-color: thistle; text-align: justify; display: inline;">
+        <div style="border: black 2px solid; margin: 12px;padding: auto;">
+            <h1 style="text-align: center;">Exercicio 06</h1>
+	        <h2> 6-	Faça um script que contenha um menu de seleção deste exercício e execute os mesmos mediante seleção: Ex. selecionei 1, deve executar a primeira atividade e assim por diante.</h2><br>
+	        <h2>R: <script> document.write(mensagem);</script></h2>
+        </div>
+    </body> 
+</html>
