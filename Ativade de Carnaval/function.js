@@ -1,4 +1,3 @@
-// exercicio 1
 function estrutura1()
 {
  var packs = [];
@@ -30,3 +29,23 @@ function calculo_total(value)
 
 }
 //exercicio 2
+function estrutura2()
+{   
+    var nota =0;
+    var notas = [];
+    var reducer_notas= (accumulator, currentValue) => accumulator + currentValue;
+    for(var x =0;x<5;x++)
+    {
+        nota= parseFloat(prompt("Informe as notas do aluno."))
+        if(nota >= 5 && nota <= 10)
+        {
+        notas.push(nota)
+        }
+    }
+    notas.sort((a,b) => a -b);
+    notas.pop();
+    notas.shift();
+
+    document.write("a nota final é "+notas.reduce(reducer_notas))
+    document.write("<a href='atividade.html'>Return</a>")
+}
