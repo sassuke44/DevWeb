@@ -41,11 +41,16 @@ function estrutura2()
         {
         notas.push(nota)
         }
+        else
+        {
+            alert("informe um valor valido!!")
+            x--;
+        }
     }
     notas.sort((a,b) => a -b);
     notas.pop();
     notas.shift();
 
     document.write("a nota final é "+notas.reduce(reducer_notas))
-    document.write("<a href='atividade.html'>Return</a>")
+    document.write("<br><a href='atividade.html'>Return</a>")
 }
