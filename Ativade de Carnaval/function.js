@@ -29,28 +29,66 @@ function calculo_total(value)
 
 }
 //exercicio 2
+function retornaIndiceMaiorValor(nota_final) {
+    let maior = nota_final[0];
+    let indice = 0;
+    for (let i = 1; i < nota_final.length; i++) {
+        if (nota_final[i] > maior) {
+            maior = nota_final[i];
+            indice = i;
+        }
+    }
+    return indice;
+}
+
 function estrutura2()
 {   
     var nota =0;
     var notas = [];
-    var reducer_notas= (accumulator, currentValue) => accumulator + currentValue;
-    for(var x =0;x<5;x++)
-    {
-        nota= parseFloat(prompt("Informe as notas do aluno."))
-        if(nota >= 5 && nota <= 10)
+    var nota_final=[];
+    var nome ="";
+    var nomes = []
+        
+    for(var x =0;x<=6;x++)
+    {   if(x < 5)
         {
-        notas.push(nota)
+        nota= parseFloat(prompt("Informe as notas do aluno."));
+        if(nota >= 5 && nota <= 10)//validação das notas
+        {
+        notas.push(nota);//adição da nota caso seja valida
         }
         else
         {
-            alert("informe um valor valido!!")
+            alert("informe um valor valido!!");//caso seja invalida avisa o usuario
             x--;
         }
     }
-    notas.sort((a,b) => a -b);
-    notas.pop();
-    notas.shift();
-
-    document.write("a nota final é "+notas.reduce(reducer_notas))
-    document.write("<br><a href='atividade.html'>Return</a>")
+        if(x == 6)
+        {
+            notas.sort((a,b) => a -b);//ordena em ordem crescente 
+            notas.pop();//remove o maior
+            notas.shift();//remove o menor
+            var reducer_notas= (accumulator, currentValue) => accumulator + currentValue; 
+            var final =notas.reduce(reducer_notas);//soma das notas
+            nota_final.push(final);//array de todas as notas finais
+            
+            nome =prompt("Informe o nome do aluno.");//nome do aluno
+            document.write("a nota final é "+ final +" do aluno " + nome + "<br>");//resultado
+            notas.splice(0, notas.length)//limpando o array de notas
+            nomes.push(nome);
+            var continuar = prompt("deseja adicionar um novo aluno?(sim ou não)" )// confirmar a adição de outro aluno
+            if(continuar =="sim")
+            {
+                x=-1;
+            
+                nome ="";
+            }
+        }
+    }
+    document.write("A maior nota foi "+nota_final[retornaIndiceMaiorValor(nota_final)] + " do aluno "+nomes[retornaIndiceMaiorValor(nota_final)])
+    document.write("<br><a href='atividade.html'>Return</a>");
 }
+
+
+
+
