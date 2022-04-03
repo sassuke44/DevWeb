@@ -1,0 +1,89 @@
+*{
+    font-size: 20px;
+}
+    body{
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 100px;
+        background-color: rgb(95, 95, 95);
+        text-align: center;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    .produtos{
+        margin-top: 20%;
+        color: whitesmoke;
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: auto;
+        grid-row-start:1;
+        align-content: center;
+        padding: 20px;
+        border:  0.5px solid gainsboro;
+        border-radius: 20px;
+    }
+    .produtos input{
+        background-color: transparent;
+        color: white;
+        padding: 2px;
+     
+    }
+    
+    .row-1{
+        grid-row-end:1;
+    }
+    .row-2{
+        grid-row-end:2;
+    
+    }
+    .row-3{
+        grid-row-end:3;
+    
+    }
+    .row-4{
+        grid-row-end:4;
+        grid-column:1;
+    }
+    .produtos input::placeholder {
+        color: white;
+        text-decoration: bold;
+    }
+
+  .botoes button{
+        margin-top: 4%;    
+      background-color: rgb(95, 95, 95);
+      color: white;
+      border:  0.5px solid gainsboro;
+      border-radius: 5px;
+      padding: 4px;
+      margin-right: 40px;
+      box-shadow: 5px 5px 5px rgb(109, 109, 112);
+  }
+  .botoes button:hover{
+      background-color:coral ;
+      color: black;
+      text-decoration: bold;
+  }
+  .saida table{
+    margin-top: 4%;
+    width: 100%;
+    height: 5%;
+
+  }
+.saida table, th, td {
+    border: 1px solid;
+  }
+  .saida tr:hover {
+    background-color:coral ;
+    color: black;
+    text-decoration: bold;
+      
+    }
+.saida tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
