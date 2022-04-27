@@ -1,0 +1,40 @@
+body{
+
+    display: flex;
+    margin: 0px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.cabecalho{
+    background-color: rgb(56, 112, 42);
+    color: white;
+}
+.quadrado{
+      padding: 10px;
+    border: 2px solid rgb(56, 112, 42);
+}
+td{
+    padding: 10px;
+    border: 2px solid rgb(56, 112, 42);
+}   
+ul,li{
+    list-style-type: none;
+}
+.clickable{
+    cursor:pointer;
+    
+}
+td:hover{
+    cursor:pointer;
+    background-color:  rgb(56, 112, 42);;
+}
+
+.deleteButton{
+    background-color:rgb(127, 255, 212);
+    color:white;
+    font-weight: bold;
+    background-color: darkred;
+    margin-right: 10px;
+    border-radius: 50%;
+}
