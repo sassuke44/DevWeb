@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="PT">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+
+  <title>Desafio FETCH/ASYNC </title>
+</head>
+
+<body>
+
+
+  <div class="country-container">
+
+    <!-- Países lado esquerdo -->
+    <div class="country-list">
+      <h5>Países (<span id="countCountries"></span>)</h5>
+      <h6>População total: <span id="totalPopulationList"></span></h6>
+      <input type="text" id="pesquisa_coutries" />
+      <div id="regioes">
+
+      </div>
+      <table>
+        <tr>
+          <td>
+            Ações
+          </td>
+          <td>
+            ID
+          </td>
+          <td>
+            Pais
+          </td>
+
+          <td>
+            População
+          </td>
+        </tr>
+      </table>
+      <table>
+        <tbody id="tabCountries">
+
+
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Países lado direito -->
+    <div class="country-list">
+      <h5>Países (<span id="countCountriesFavorite"></span>)</h5>
+      <h6>População total: <span id="totalPopulationFavorites"></span></h6>
+      <input type="text" id="pesquisa_coutries_favorito">
+      <div id="regioes_favoritas">
+
+      </div>
+      <table>
+        <tr>
+          <td>
+            Ações
+          </td>
+          <td>
+            ID
+          </td>
+          <td>
+            Pais
+          </td>
+          <td>
+            População
+          </td>
+        </tr>
+        <tr id="region_search">
+
+        </tr>
+      </table>
+      <table id="tabFavorites">
+        <tbody>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
