@@ -73,7 +73,7 @@ async function doFetchAsync() {
       table.appendChild(tr);
 
 
-      search.addEventListener("keydown", filter_region)
+      search.addEventListener("keydown", pesquisar)
       search_favorito.addEventListener("keydown", pesquisar)
     });
   };
