@@ -82,6 +82,6 @@ async function Separar(cidades, estados, regioes) {
     // }
 
 
-    q.quest(cidadesEstados2, cidadesEstados3, quest2, quest3)
+    q.quest(cidadesEstados2, cidadesEstados3, quest2, quest3,regioes)
 }
 export default { Separar }
